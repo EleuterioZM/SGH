@@ -1,0 +1,230 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+.sidebar {
+    position: fixed;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    background: #ffffff;
+    /* Cor de fundo inicial */
+    animation: changeColor 30s infinite;
+}
+
+@keyframes changeColor {
+    0% {
+        background: #ffffff;
+    }
+
+    25% {
+        background: #063146;
+    }
+
+    50% {
+        background: #31af7f;
+    }
+
+    75% {
+        background: #e9a374;
+    }
+
+    100% {
+        background: #458db6;
+    }
+}
+
+
+.sidebar header {
+    font-size: 22px;
+    color: white;
+    text-align: center;
+    line-height: 70px;
+    background: 063146;
+    user-select: none;
+}
+
+.sidebar ul a {
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 65px;
+    font-size: 20px;
+    color: white;
+    padding-left: 40px;
+    text-decoration: none;
+    box-sizing: border-box;
+    border-top: 1px solid rgba(255, 255, 255, .1);
+}
+
+.imm {
+    height: 20px;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+ul li:hover a {
+    padding-left: 60px;
+    transition: .2s;
+}
+
+.sidebar ul a img {
+    margin-right: 17px;
+    text-align: center;
+}
+
+section {
+    background: url(../img/bg.jpg)no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+#bgabout {
+    position: relative;
+
+    background: url('../img/About/pexels-vidal-balielo-jr-4006979.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+#bgprofile {
+    position: relative;
+
+    background: url('../img/About/pexels-negative-space-48604.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+
+#overlay {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    width: 50%;
+    height: 2px;
+    /* Altura da linha */
+    background-color: rgb(17, 141, 172);
+    /* Cor da linha */
+    content: "";
+}
+
+#text {
+    position: absolute;
+    top: 55%;
+    /* Ajuste conforme necessário */
+    left: 35%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 20px;
+    opacity: 0.9;
+    /* Opacidade do texto */
+}
+
+#bgservices {
+    position: relative;
+    background: url('../img/About/pexels-negative-space-48604.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+
+
+#bgprofil {
+    position: relative;
+    background: url('../img/About/pexels-tima-miroshnichenko-5452201.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    color: #333;
+    padding: 20px;
+    /* Altere conforme necessário */
+    margin: 0;
+}
+
+#bnt:hover {
+    background-color: #28a745;
+    border-color: #28a745;
+    color: #fff;
+    height: 40px;
+    width: 150px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    transform: scale(1.1);
+}
+
+.blue-section {
+    background-color: blue;
+    color: white;
+    padding: 0px;
+    text-align: center;
+    width: 300px;
+}
+
+.blue-section h2 {
+    margin-bottom: 10px;
+}
+
+.blue-section p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.section {
+    width: 25%;
+    float: left;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.section h2 {
+    margin-bottom: 10px;
+    color: #7ad3cb;
+}
+
+.section p {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #666;
+    font-family: 'Roboto', sans-serif;
+}
+
+.section:not(:last-child) {
+    border-right: 1px solid #ccc;
+}
+
+#el {
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.btnprofile {
+    height: 50%;
+    left: 50%;
+}
+
+#bgadmin {
+    position: relative;
+    background: url('../img/pexels-rodolfo-quirós-2330137.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.jumbotron {
+    margin-left: 20vw;
+    margin-top: 40vw;
+}
